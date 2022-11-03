@@ -16,12 +16,14 @@ function reducer(state = initialState, action) {
         },
       };
     }
-    // case "counter/incrementAmount": {
-    //   ...state,
-    //   counter: {
-
-    //   }
-    // }
+    case "counter/incrementAmount": {
+      return {
+        ...state,
+        counter: {
+          valeu: state.counter.value + action.paylod,
+        },
+      };
+    }
     default: {
       return state;
     }
